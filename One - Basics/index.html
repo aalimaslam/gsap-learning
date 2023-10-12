@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background:#000;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 4rem;
+            align-items: center;
+        }
+        nav .logo{
+            width:15%;
+        }
+        nav .logo{
+            font-size:1.3rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color:white;
+        }
+        
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition:all .3s;
+            color:white;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        .btn{
+            padding: 5px 15px;
+            border-radius:4px;
+        }
+        .btn-primary{
+            background:#fff;
+            color:#000;
+            border:1px solid #000;
+        }
+        .btn:hover{
+            background:#000;
+            color:#fff;
+            text-decoration: none;
+
+        }
+        .main{
+            text-transform: uppercase;
+            text-align: center;
+            font-size:50px;
+            color:white;
+        }
+        .main h1{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            line-height: 140px;
+        }
+        .main .with-btn{
+            gap: 25px;
+        }
+
+        .main h1:first-child{
+            margin-top:40px;
+        }
+        .main .with-btn .book-now{
+            line-height: normal;
+            font-size:25px; 
+            display: inline-block;
+            padding:10px 30px;
+            background:limegreen;
+            border-radius: 1000px;
+            color:#000;
+    }
+    .images img{
+        position: absolute;
+    }
+    .left-image{
+        top:20%;
+        left:3%;
+        border-radius: 4px;
+        width:250px;
+    }
+    .right-image{
+        top:50%;
+        right:5%;
+        border-radius: 4px;
+        width:200px;
+    }
+    .top-landscape-img-left, .top-landscape-img-right{
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    .top-landscape-img-right{
+        top:23% ;
+        right:10% ;
+        width:200px; 
+    }
+    .top-landscape-img-left{
+        bottom:5%;
+        left:10%;
+        width:250px;
+    }
+    .bubble{
+        top:25%;
+        right:25%;
+        width:250px;
+        height:100px;
+        border-radius: 100%;
+        transform: rotate(20deg);
+    }
+    .cool-anim{
+        position: relative;
+    }
+    .cool-anim::before{
+        content:"EVERYTHING";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        -webkit-text-stroke: 1px white;
+        color:transparent;
+        overflow: hidden;
+        animation: animate 4s ease forwards;
+        z-index:11111;
+    }
+    @keyframes animate{
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                aalimaslam.
+                </div>
+
+            <div class="middle-links">
+                <a href="#">Products</a>
+                <a href="#">Templates</a>
+                <a href="#">Resources</a>
+            </div>
+            <div class="end-links">
+                <a href="#" class="btn ">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+        <div class="main">
+            <h1 class="cool-anim">
+                <span>E</span>
+                <span>v</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+                <span>t</span>
+                <span>h</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </h1>
+            <h1 class="with-btn">
+                <span>T</span>
+                <span>o</span>
+                 <span class="book-now">BOOK NOW</span> 
+                 <span>S</span>
+                 <span>e</span>
+                 <span>l</span>
+                 <span>l</span>
+                </h1>
+            <h1>
+                <span>A</span>
+                <span>N</span>
+                <span>Y</span>
+                <span>T</span>
+                <span>H</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </h1>
+        </div>
+        <div class="images">
+            <img src="https://images.pexels.com/photos/9864565/pexels-photo-9864565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="left-image">
+            <img src="https://images.pexels.com/photos/4585185/pexels-photo-4585185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="right-image">
+            <img src="https://images.pexels.com/photos/3618162/pexels-photo-3618162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="top-landscape-img-right"/>
+            <img src="https://images.pexels.com/photos/2179483/pexels-photo-2179483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="top-landscape-img-left"/>
+            <img src="https://images.pexels.com/photos/1154723/pexels-photo-1154723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="bubble"/>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
